@@ -161,19 +161,19 @@ h2 {
 @media only screen and (max-width:400px) {
 
   .back {
-   
+
     z-index: -1;
     position: fixed;
     width: 100%;
     height: 100%;
     opacity: 30%;
-   
+
   }
 
   article {
 
 
-  
+
     width: 85%;
     color: aliceblue;
     background: rgb(54, 48, 59);
@@ -182,11 +182,13 @@ h2 {
     border-radius: 10px;
     text-align: 5px;
   }
+
   input {
     background-color: rgb(66, 57, 57);
     color: greenyellow;
-  width: 45%;
+    width: 45%;
   }
+
   .locationCard {
     color: rgb(9, 247, 9);
     background-color: rgb(39, 34, 43);
@@ -208,7 +210,7 @@ h2 {
 
   .locationCard>ul {
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 15px;
     color: greenyellow;
 
@@ -238,40 +240,52 @@ flex-wrap: wrap;
     padding: 10px;
     color: rgb(21, 233, 21);
   }
-li{font-size: 12px;
-   ;
 
-}
+  li {
+    font-size: 12px;
+    ;
 
-form {
-  background-color: rgb(39, 34, 43);
-  top: 470px;
-  left: 130px;
-  width: 35%;
-  height: 5%;
+  }
 
-
-
-}
-
-.searcher {
-  width: 95%;
-
-  
+  form {
+    background-color: rgb(39, 34, 43);
+    top: 470px;
+    left: 125px;
+    width: 35%;
+    height: 7%;
+    border-radius: 15px;
 
 
-}
 
-.button {
+  }
 
-  border-radius: 30px;
-  background-color: greenyellow;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 93%;
-  height: 50%;
-}
+  .searcher {
+    width: 95%;
 
 
+
+
+  }
+
+  .button {
+
+    border-radius: 30px;
+    background-color: greenyellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 93%;
+    height: 50%;
+  }
+  .App {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border:none;
+    height: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
 
 }
 
