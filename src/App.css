@@ -130,6 +130,7 @@ form {
 input {
   background-color: rgb(66, 57, 57);
   color: greenyellow;
+
 }
 
 ul {
@@ -151,3 +152,126 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
   color: greenyellow;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* Dispositivos pequeños */
+
+
+
+@media only screen and (max-width:400px) {
+
+  article {
+
+
+  
+    width: 85%;
+    color: aliceblue;
+    background: rgb(54, 48, 59);
+    opacity: 95%;
+    border: greenyellow solid;
+    border-radius: 10px;
+    text-align: 5px;
+  }
+  input {
+    background-color: rgb(66, 57, 57);
+    color: greenyellow;
+  width: 45%;
+  }
+  .locationCard {
+    color: rgb(9, 247, 9);
+    background-color: rgb(39, 34, 43);
+    width: 80%;
+    height: 190px;
+    margin-left: 40px;
+    opacity: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+
+  }
+
+  .img_chara {
+    width: 100%;
+    padding-top: 11px;
+    border-bottom: 2px greenyellow solid;
+  }
+
+  .locationCard>ul {
+    display: flex;
+flex-wrap: wrap;
+    gap: 15px;
+    color: greenyellow;
+
+  }
+
+  h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: greenyellow;
+    font-size: 25px;
+  }
+
+  .banner {
+    position: relative;
+
+    padding-left: 0;
+    height: 250px;
+    width: 100%;
+    z-index: 0;
+
+
+
+  }
+
+
+  .locationCardTitles {
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(21, 233, 21);
+  }
+li{font-size: 12px;
+   ;
+
+}
+
+form {
+  background-color: rgb(39, 34, 43);
+  top: 470px;
+  left: 130px;
+  width: 35%;
+  height: 5%;
+
+
+
+}
+
+.searcher {
+  width: 95%;
+
+  
+
+
+}
+
+.button {
+
+  border-radius: 30px;
+  background-color: greenyellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 93%;
+  height: 50%;
+}
+
+}
+
+/* Dispositivos medianos */
+@media screen and (min-width: 376px) {}
+
+/* Tablets */
+@media screen and (min-width: 767px) {}
+
+
+/* Notebooks */
+@media screen and (min-width: 992px) {}
+
+/* Dispositivos grandes */
+@media screen and (min-width: 1024px) {}
