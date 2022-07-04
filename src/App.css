@@ -158,7 +158,7 @@ h2 {
 
 
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
 
   .back {
 
@@ -249,12 +249,13 @@ h2 {
 
   form {
     background-color: rgb(39, 34, 43);
-    top: 470px;
-    left: 125px;
+    top: 450px;
+    left: 135px;
     width: 35%;
-    height: 7%;
+    height: 9%;
     border-radius: 15px;
-
+    opacity: 75%;
+    
 
 
   }
@@ -275,13 +276,14 @@ h2 {
     width: 93%;
     height: 50%;
   }
+
   .App {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border:none;
+    border: none;
     height: 100%;
     gap: 50px;
     flex-wrap: wrap;
