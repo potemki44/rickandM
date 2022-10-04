@@ -2,7 +2,23 @@
   box-sizing: border-box;
 }
 
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
 body {
+  margin: 0px;
   background-color: rgb(25, 31, 103);
 }
 
@@ -37,22 +53,10 @@ body {
 }
 
 
-header {
-  width: 90%;
-
-
-}
-
 .banner {
-  position: relative;
-
-  padding-left: 0;
-  height: 450px;
+  height: 40%;
   width: 100%;
   z-index: 0;
-
-
-
 }
 
 .back {
@@ -64,65 +68,66 @@ header {
   top: 0px
 }
 
-.App {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: white solid;
-  gap: 50px;
-  flex-wrap: wrap;
-}
 
 .locationCard {
   color: rgb(9, 247, 9);
   background-color: rgb(39, 34, 43);
-  width: 80%;
+  width: 350px;
   height: 150px;
-  margin-left: 100px;
+padding-right: 5px;
   opacity: 80%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 15px;
 
 }
 
 .locationCard>ul {
   display: flex;
-  gap: 50px;
+ flex-wrap: wrap;
+ gap: 20px;
   color: greenyellow;
+
 
 }
 
 article {
-  width: 23%;
+  width: 320px;
   color: aliceblue;
   background: rgb(54, 48, 59);
   opacity: 95%;
   border: greenyellow solid;
   border-radius: 10px;
   text-align: 5px;
+  height: 500px;
+  border-radius: 15px;
 }
 
 .searcher {
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+
 
 
 }
 
 .button {
-
+  display: flex;
+  margin-left: 20px;
   border-radius: 30px;
   background-color: greenyellow;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 form {
-  background-color: rgb(54, 48, 59);
-  position: absolute;
-  top: 500px;
-  left: 976px;
+
+  position: sticky;
+  top: 60px;
+
 
 
 }
@@ -138,168 +143,18 @@ ul {
 }
 
 .locationCardTitles {
-  font-size: 30px;
-  padding: 15px;
+  font-size: 14px;
+
   color: rgb(21, 233, 21);
 }
 
-.img_chara {
-  padding-top: 11px;
-  border-bottom: 2px greenyellow solid;
-}
 
 h2 {
+  font-size: 21px;
   font-family: 'Courier New', Courier, monospace;
   color: greenyellow;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* Dispositivos pequeños */
-
-
-
-@media only screen and (max-width:500px) {
-
-  .back {
-
-    z-index: -1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    opacity: 30%;
-
-  }
-
-  article {
-
-
-
-    width: 85%;
-    color: aliceblue;
-    background: rgb(54, 48, 59);
-    opacity: 95%;
-    border: greenyellow solid;
-    border-radius: 10px;
-    text-align: 5px;
-  }
-
-  input {
-    background-color: rgb(66, 57, 57);
-    color: greenyellow;
-    width: 45%;
-  }
-
-  .locationCard {
-    color: rgb(9, 247, 9);
-    background-color: rgb(39, 34, 43);
-    width: 80%;
-    height: 190px;
-    margin-left: 40px;
-    opacity: 80%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    border-radius: 15px;
-
-  }
-
-  .img_chara {
-    width: 100%;
-    padding-top: 11px;
-    border-bottom: 2px greenyellow solid;
-  }
-
-  .locationCard>ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    color: greenyellow;
-
-  }
-
-  h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: greenyellow;
-    font-size: 25px;
-  }
-
-  .banner {
-    position: relative;
-
-    padding-left: 0;
-    height: 250px;
-    width: 100%;
-    z-index: 0;
-
-
-
-  }
-
-
-  .locationCardTitles {
-    font-size: 15px;
-    padding: 10px;
-    color: rgb(21, 233, 21);
-  }
-
-  li {
-    font-size: 12px;
-    ;
-
-  }
-
-  form {
-    background-color: rgb(39, 34, 43);
-    top: 450px;
-    left: 135px;
-    width: 35%;
-    height: 9%;
-    border-radius: 15px;
-    opacity: 75%;
-    
-
-
-  }
-
-  .searcher {
-    width: 95%;
-
-
-
-
-  }
-
-  .button {
-
-    border-radius: 30px;
-    background-color: greenyellow;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 93%;
-    height: 50%;
-  }
-
-  .App {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: none;
-    height: 100%;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-
+li {
+  font-size: 13px;
 }
-
-/* Dispositivos medianos */
-@media screen and (min-width: 376px) {}
-
-/* Tablets */
-@media screen and (min-width: 767px) {}
-
-
-/* Notebooks */
-@media screen and (min-width: 992px) {}
-
-/* Dispositivos grandes */
-@media screen and (min-width: 1024px) {}

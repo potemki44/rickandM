@@ -6,10 +6,14 @@ import { LocationCard } from './components/LocationCard'
 import Cardcharacter from './components/Cardcharacter'
 import { InputSearch } from './components/InputSearch'
 import banner from "../src/img/rick.jpg"
+import { Loading } from './components/Loading'
 
 
 
 function App() {
+
+
+  const [loader,setloader] = useState(false)
   const [searchLocation, setsearchLocation] = useState()
   const location = useLocationApi(searchLocation)
 console.log(searchLocation)
@@ -24,7 +28,7 @@ console.log(searchLocation)
      
       
       
-        {location?.residents.map(resident => (
+       {loader ? <Loading/> :location?.residents.map(resident => (
           <Cardcharacter resident={resident}
             key={resident} />
         ))}
